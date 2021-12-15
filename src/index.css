@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +20,60 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.navbar{
+  background-color: #fff !important;
+}
+.navbar-brand{
+  font: size 1.9rem !important;
+  color: #565387 !important;
+}
+.menu-active{
+  font-weight: bold;
+  border-bottom:1px solid #565387;
+}
+.navbar a:hover{
+  color: #3498db !important;
+}
+@media (min-width: 991px){
+  .navbar:brand{
+    font-size: 1.5rem !important;
+  }
+  .menu-active{
+    font-weight: bold;
+    border-bottom:none;
+  }
+}
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+#header h1{
+  margin:0 0 10px 0;
+  font-size:48px;
+  font--weight:700;
+  color:black; 
+}
+#header .brand-name{
+  color:#3498db;
+}
+#header h2{
+  color:#484848;
+  font-size: 24px;
+}
+#header-img{
+  text-align:right;
+}
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  width: 80%;
+}
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px); 
+  }
 }
